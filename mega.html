@@ -1,0 +1,209 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Nesting HTML List</title>
+        <style>
+            table, th, td {
+              border: 1px solid red;
+              border-collapse: collapse;
+             }
+           table {
+              width: 100%;
+            }
+           </style>
+    </head>
+    <body>
+        <section>
+            <h2>List Example</h2>
+        <ol>
+            <li>List Item 1
+                <ol style="list-style-type: upper-alpha;">
+                    <li>Nested item 1.1</li>
+                    <li>Nested item 1.2</li>
+                </ol>
+            </li>
+            <li>List Item 2
+                <ol style="list-style-type: lower-roman;">
+                    <li>Nested item 2.1</li>
+                    <li>Nested item 2.2</li>
+                    <ul style="list-style-type: square;">
+                        <li>Nested item 2.2.1</li>
+                        <li>Nested item 2.2.2
+                            <ul style="list-style-type: circle;">
+                                <li>Nested item 2.2.2.1</li>
+                                <li>Nested item 2.2.2.2</li>
+                            </ul>
+                            <li>Nested item 2.2.3</li>
+                        </li>
+                    </ul>
+                    <li>Nested item 2.3</li>
+                  </ol>
+ </li>
+ <li>List Item 3
+    <ol style="list-style-type: disc;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+ </li>
+        </ol>
+<p>COMP 376</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction To Game Programming</p>
+<p>Soen287</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Programming</p>
+<p>This is a <sup>5</sup>test<sub>9</sub> for Assignment 1</p>
+    </section>
+    <table>
+        <caption>Learning Tables</caption>
+        <thead>
+            <tr>
+                <th>1 header</th>
+                <th>1 header</th>
+                <th>1 header</th>
+                <th>1 header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1 data</td>
+                <td>1 data</td>
+                <td>1 data</td>
+                <td>1 data</td>
+            </tr>
+            <tr>
+                <td>2 data</td>
+                <td>2 data</td>
+                <td>2 data</td>
+                <td>2 data</td>
+            </tr>
+            <tr>
+                <td>3 data</td>
+                <td>3 data</td>
+                <td>3 data</td>
+                <td>3 data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1,000</td>
+                <td>7,000</td>
+                <td>= 8,000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form name="jim">
+        <p><input type="text" size="70" maxlength="5" placeholder="First Name" required></p>
+        <p>
+            <label for="password">Password</label>
+            <input rd="username" type="password">
+        </p>
+        <p>Date <input type="date"></p>
+        <p>Date <input type="datetime-local"></p>
+        <p>File <input type="file"></p>
+        <p><input type="text" size="70" maxlength="5" placeholder="First Name (optional)" required></p>
+        <p><textarea rows="5" cols="50" maxlength="10"></textarea></p>
+        <p><button type="submit">click to send</button></p>
+        <select>
+            <option>Select State</option>
+            <option>Lagos</option>
+            <option>Delta</option>
+            <option>Kano</option>
+            <option>Kaduna</option>
+            <option>Rivers</option>
+        </select>
+    </form>
+    <p><button type="button"><a href="https://web.facebook.com/?_rdc=1&_rdr">click to visit Facebook</a></button></p>
+    <p>choose color
+        <select size="2">
+            <option>select color</option>
+            <option>red</option>
+            <option>blue</option>
+            <option>green</option>
+            <option>yellow</option>
+        </select>
+    </p>
+    <p><label>Date <input type="date"></label></p>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>S/N</td>
+                    <td>Age</td>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>30</td>
+                    <td>Timi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>30</td>
+                    <td>Ade</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>S/N</td>
+                        <td>Age</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="2">30</td>
+                        <td>Timi</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ade</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<div>
+            <table>
+                <tr>
+                    <td>S/N</td>
+                    <td>State</td>
+                    <td>Capital</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lagos</td>
+                    <td>Ikeja</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ondo</td>
+                    <td>Akure</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Kaduna</td>
+                </tr>
+            </table>
+        </div>
+        <audio controls src="music/Elohim.mp3" type="audio/mpeg"></audio>
+        <form>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <p>Username <input type="username"></p>
+                <p>Password <input type="password"></p>
+                <p>Phone <input type="phone"></p>
+            </fieldset>
+        </form>
+        <audio controls>
+            <source src="music/Elohim.mp3" type="audio/mpeg">
+        </audio>
+        <video controls>
+            <source src="music/Iyanya.mp4" type="video/mp4">
+        </video>
+    </body>
+</html>
